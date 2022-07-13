@@ -19,7 +19,7 @@ function Login() {
   return (
     <div className='login'>
         <div className='login-top'>
-        <h2 className='login-title'>Social Beings</h2>
+        <h2 className='login-title'>Social Beings 🙂</h2>
         <span className="login-desc">Connect to your beloved friends and colleagues on Social Beings</span>
         </div>
         <div className='login-bottom' onSubmit={handleClick}>

@@ -2,6 +2,7 @@ import React, { Suspense, lazy, useContext } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 import { AuthContext } from "./context/AuthContext";
+import "./index.css";
 // import Messanger from "./pages/messanger/Messanger";
 // import Login from "./pages/login/Login";
 // import Register from "./pages/register/Register";
