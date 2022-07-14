@@ -70,19 +70,19 @@ app.use("/api/conversation",conversationRoute);
 app.use("/api/message",messageRoute);
 
 // ------- Deploy ho jae bas -----
-const __dirname1=path.resolve();
+ const __dirname1=path.resolve();
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname1, "/build")));
+ if (process.env.NODE_ENV === "production") {
+   app.use(express.static(path.join(__dirname1, "/build")));
 
-  app.get("*", (req, res) =>
+ app.get("*", (req, res) =>
     res.sendFile(path.resolve(__dirname1, "build", "index.html"))
   );
-} else {
+ } else {
   app.get("/", (req, res) => {
-    res.send("API is running..");
+     res.send("API is running..");
   });
-}
+ }
 
 // jab woh url hai hi nhi
 app.use((req,res)=>{
