@@ -21,7 +21,7 @@ function Messanger() {
   const socket =useRef();
 
   const {user}= useContext(AuthContext);
-   const ENDPOINT= "https://git.heroku.com/social-beings.git";
+   const ENDPOINT= process.env.PORT;
 
   useEffect(()=>
   {

@@ -3,10 +3,10 @@ const app=express();
 
 var bodyParser = require('body-parser');
 const mongoose=require("mongoose");
-const helmet=require("helmet");
+// const helmet=require("helmet");
 const morgan=require("morgan");
 const dotenv=require("dotenv");
-const cors =require('cors');
+ const cors =require('cors');
 const multer=require("multer");
 const userRoute=require("./routes/users");
 const authUser=require("./routes/auth");
@@ -16,9 +16,9 @@ const messageRoute= require("./routes/message")
 const path=require("path");
 
 
-helmet({
-  crossOriginResourcePolicy: false,
-})
+// helmet({
+//   crossOriginResourcePolicy: false,
+// })
 dotenv.config({path:".env"})
 
    mongoose.connect(process.env.MONGO_URL, {
@@ -36,12 +36,12 @@ dotenv.config({path:".env"})
 app.use("/images",express.static(path.join(__dirname,"/assets/images")))
 //middle wares
 
-app.use(cors());
+ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use(express.json());
-app.use(helmet());
+// app.use(helmet());
 app.use(morgan("common"));
 
 const storage = multer.diskStorage({
@@ -99,7 +99,7 @@ const server= app.listen(PORT,()=>
 
 const io=require("socket.io")(server,{
   cors:{
-      origin:"http://localhost:3000"
+      origin:process.env.PORT
   }
 });
 

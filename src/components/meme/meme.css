@@ -8,7 +8,7 @@
     
 }
 .meme-img
-{
+{   border: 0.5px solid #000;
     width:25vw;
     object-fit: contain;
     border-radius: 10px;

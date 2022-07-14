@@ -6,7 +6,7 @@ export const Memes =[
         {
         "ID": 1,
         "bottomText": "Good😒",
-        "image": "http://imgflip.com/s/meme/Grumpy-Cat.jpg",
+        "image": "https://imgflip.com/s/meme/Grumpy-Cat.jpg",
         "name": "Grumpy Cat",
         "rank": 10,
         "tags": "Tardar Sauce, Tabatha Bundesen, Felis domesticus",
@@ -242,7 +242,7 @@ export const Memes =[
             },
             {
             "ID": 27,
-            "bottomText": "Me (thinking) Aaj toh pani puri khaungi😋",
+            "bottomText": "(thinking) Aaj toh pani puri khaunga😋",
             "image": "https://imgflip.com/s/meme/10-Guy.jpg",
             "name": "Stoner Stanley",
             "rank": 250,
