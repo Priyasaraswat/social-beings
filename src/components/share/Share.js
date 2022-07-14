@@ -1,9 +1,10 @@
 import React, { useContext, useRef, useState } from 'react'
 import "./Share.css"
-import {PermMedia ,Label,Room,EmojiEmotions} from "@material-ui/icons"
+// import {PermMedia ,Label,Room,EmojiEmotions} from "@material-ui/icons"
+import { MdPermMedia ,MdEmojiEmotions,MdLabel,MdLocationOn ,MdClear} from "react-icons/md";
 import {AuthContext} from "../../../src/context/AuthContext";
 import axios from "axios"
-import {Cancel} from "@material-ui/icons"
+// import {Cancel} from "@material-ui/icons"
 
 function Share() {
   const PF= process.env.REACT_APP_PUBLIC_FOLDER;
@@ -55,7 +56,7 @@ function Share() {
         {file && (
           <div className='share-img-container'>
             <img  className =" share-img-file" src={URL.createObjectURL(file)} alt="" />
-            <Cancel  className="share-cancel-img-btn" onClick={()=>
+            <MdClear  className="share-cancel-img-btn" onClick={()=>
             setFile(null)}
             />
           </div>
@@ -63,20 +64,20 @@ function Share() {
         <form className='share-bottom' onSubmit={submitHandler}>
           <div className='share-options'>
           <label  htmlFor="file" className='share-option'>
-            <PermMedia htmlColor="tomato" className="shareIcon"  />
+            <MdPermMedia  className="shareIcon mediaicon"  />
             <span className='shareIconOptionText'>Photo or Video</span>
             <input style={{display:"none"}} type="file" id="file" accept='.png,.jpg,.jpeg' onChange={(e)=>setFile(e.target.files[0])} />
           </label>
           <div className='share-option'>
-            <Label className="shareIcon" htmlColor="blue" />
+            <MdLabel className="shareIcon labelicon" />
             <span className='shareIconOptionText'>Tag</span>
           </div>
           <div className='share-option'>
-            <Room className="shareIcon"  htmlColor="green" />
+            <MdLocationOn className="shareIcon locationicon"   />
             <span className='shareIconOptionText'>Location</span>
           </div>
           <div className='share-option'>
-            <EmojiEmotions className="shareIcon"  htmlColor="goldenrod"/>
+            <MdEmojiEmotions className="shareIcon emojiicon"  />
             <span className='shareIconOptionText'>Feelings</span>
           </div>
           <button className='share-button' type="submit">Share</button>

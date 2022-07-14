@@ -1,11 +1,12 @@
 import React, { useContext, useState } from 'react'
 import {Link} from 'react-router-dom'
-import {Chat , ExitToAppOutlined, PeopleAltOutlined, UpdateOutlined, HomeOutlined, CastConnectedOutlined, Close} from "@material-ui/icons";
+// import {Chat , ExitToAppOutlined, PeopleAltOutlined, UpdateOutlined, HomeOutlined, CastConnectedOutlined, Close} from "@material-ui/icons";
+import {MdChat,MdLogout,MdSupervisorAccount,MdUpdate,MdHome,MdClear,MdConnectWithoutContact ,MdMenu} from "react-icons/md";
 import "./Topbar.css"
 import {AuthContext} from "../../../src/context/AuthContext";
 import {logoutCall} from "../../apiCalls";
 import axios from 'axios';
-import { Menu } from "@material-ui/icons"
+// import { Menu } from "@material-ui/icons"
 function Topbar() {
   const PF= process.env.REACT_APP_PUBLIC_FOLDER;
   const { user,dispatch} = useContext(AuthContext);
@@ -37,7 +38,7 @@ const handleMenu =()=>
     <div className='topbar-left'>
       <Link to="/">
         <div className='topbar-logo-div'>
-       <CastConnectedOutlined className='topbar-logo-icon' />
+       <MdConnectWithoutContact className='topbar-logo-icon' />
         <span className='topbar-logo'>SOciAL BEinGS</span>
         </div>
         </Link>
@@ -47,25 +48,25 @@ const handleMenu =()=>
         <Link to="/">
           <div className='topbar-menu-icon '>
 
-        <span className='topbarLink'> <HomeOutlined /></span>
+        <span className='topbarLink'> <MdHome /></span>
         <span className='topbarLink-text'>Home</span>
         </div>
         </Link>
         <Link to="/messanger">
         <div className='topbar-menu-icon ' >
-        <span className='topbarLink'> <Chat /></span>
+        <span className='topbarLink'> <MdChat /></span>
         <span className='topbarLink-text'>Message</span>
         </div>
         </Link>
         <Link to="/showAllUser">
         <div className='topbar-menu-icon '>
-        <span className='topbarLink'> <PeopleAltOutlined /></span>
+        <span className='topbarLink'> <MdSupervisorAccount /></span>
         <span className='topbarLink-text'>Users</span>
         </div>
         </Link>
         <Link to="/updateuserdata">
         <div className='topbar-menu-icon '>
-        <span className="topbarLink"><UpdateOutlined /></span>
+        <span className="topbarLink"><MdUpdate /></span>
         <span className='topbarLink-text'>Update</span>
         </div>
         </Link>
@@ -74,7 +75,7 @@ const handleMenu =()=>
         <span className="topbarLink" 
         onClick={()=>{handleclick();
                       handledelete();
-        }}><ExitToAppOutlined /></span>
+        }}><MdLogout /></span>
         <span className='topbarLink-text'>Log Out</span>
         </div>
        
@@ -88,7 +89,7 @@ const handleMenu =()=>
      
      </div>
      <div className='menu-hamburger-icon' onClick={handleMenu}>
-      {ismenu?<Close />: <Menu  />}
+      {ismenu?<MdClear />: <MdMenu  />}
      
       </div>
      

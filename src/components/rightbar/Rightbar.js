@@ -2,8 +2,10 @@ import React ,{Suspense,lazy, useState, useEffect,useContext} from 'react'
 import "./Rightbar.css"
 import axios from "axios";
 import {Link} from "react-router-dom"
-import {GroupAdd } from "@material-ui/icons";
-import { Remove } from '@material-ui/icons';
+// import {GroupAdd } from "@material-ui/icons";
+// import { Remove } from '@material-ui/icons';
+import { AiOutlineUserAdd } from "react-icons/ai";
+import { AiOutlineUserDelete} from "react-icons/ai";
 import { AuthContext } from "../../context/AuthContext";
 import Birthday from '../birthday/Birthday';
 import { Memes } from '../../dummydata';
@@ -157,7 +159,7 @@ const ProfileRightbar =()=>
     {user.username !== currentUser.username && (
        <button className="rightbar-follow-btn" type="submit" onClick={handleClick}>
         {followed? "Unfollow" :"Follow"}
-        {followed?<Remove />:<GroupAdd />}
+        {followed?<AiOutlineUserDelete />:<AiOutlineUserAdd />}
        
          </button>
         

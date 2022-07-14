@@ -13,6 +13,22 @@
     margin-bottom: 0.8rem;
     
 }
+.emojiicon
+{
+    color: gold;
+}
+.locationicon
+{
+    color: green;
+}
+.labelicon
+{
+    color: blue;
+}
+.mediaicon
+{
+    color: tomato;
+}
 .shareimg
 {
     width:2.5rem;
@@ -79,6 +95,7 @@
     right:0;
     cursor:pointer;
     opacity: 0.9;
+    transform: scale(1.4);
 }
 @media (max-width:375px)
 {

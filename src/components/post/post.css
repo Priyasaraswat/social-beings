@@ -47,6 +47,7 @@
 .share-icon
 {
     cursor: pointer;
+    transform: scale(1.4);
 }
 .delete-post-icon
 {

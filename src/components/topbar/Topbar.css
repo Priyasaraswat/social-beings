@@ -26,7 +26,7 @@
     color:#fff;
     margin-left: 1.5rem;
     margin-right: 0.5rem;
-    transform: scale(1.4);
+    transform: scale(1.7);
 }
 .topbar-logo
 {
@@ -109,7 +109,7 @@
  .topbarLink
 {
    /* margin-left: 1.4rem; */
-   transform: scale(0.8);
+   transform: scale(1.2);
    cursor: pointer;
    color: #fff;
   
@@ -161,8 +161,8 @@
        
     }
     .topbar-dp-img {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 1.7rem;
+        height: 1.7rem;
         margin-right: 1rem;
        
     }
@@ -188,7 +188,7 @@
     }
     .topbar-profile-icon
     {
-       margin-right:5px;
+       margin-right:11px;
     }
     .topbar-right {
         display: block;
@@ -197,7 +197,7 @@
     }
     .menu-hamburger-icon {
         color: white;
-        font-size: 2rem;
+        font-size: 1.5rem;
         display: block;
         margin-left: 6rem;
     }
@@ -211,6 +211,6 @@
         color: #fff;
         margin-left: 1.3rem;
         margin-right: 0.2rem;
-        transform: scale(1.2);
+        transform: scale(1.4);
     }
 }

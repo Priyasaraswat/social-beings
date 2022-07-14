@@ -1,6 +1,8 @@
 import React, { useState , useEffect, useContext } from 'react'
 import "./post.css"
-import {DeleteForever, MoreVert } from "@material-ui/icons"
+// import {DeleteForever, MoreVert } from "@material-ui/icons"
+import { VscKebabVertical } from "react-icons/vsc";
+import { MdDeleteForever } from "react-icons/md";
 import {format} from "timeago.js"
  import axios from "axios"
  import {Link} from 'react-router-dom'
@@ -79,8 +81,8 @@ function Post({post}) {
             <div className='post-top-right'>
               {/* <div className='delete-post-icon active-icon'>Delete</div> */}
               <div className={isActive?'active-icon':'delete-post-icon'} onClick={handledelete}>
-                <DeleteForever /> Delete the post</div>
-              <MoreVert className='share-icon'onClick={handleclick}/>
+                <MdDeleteForever /> Delete the post</div>
+              <VscKebabVertical className='share-icon'onClick={handleclick}/>
               
               
             </div>

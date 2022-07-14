@@ -2,7 +2,7 @@ import React ,{useContext, useRef} from 'react'
 import "./login.css"
 import {loginCall} from "../../../src/apiCalls"
 import { AuthContext } from '../../context/AuthContext';
-import {CircularProgress} from "@material-ui/core"
+import { AiOutlineReload} from "react-icons/ai";
 import {Link} from 'react-router-dom'
 
 function Login() {
@@ -35,7 +35,7 @@ function Login() {
                 ref={password} />
                 <button className='login-btn' type="submit" 
                 disabled={isFetching}
-                >{isFetching ? <CircularProgress color="inherit" size="1.2rem"/> : "Log In" }</button>
+                >{isFetching ? <AiOutlineReload color="inherit" size="1.2rem"/> : "Log In" }</button>
             </form>
             <div className='login-bottom-bottom'>
             <span className='login-forgot-pass'>Forgot Password?</span>
