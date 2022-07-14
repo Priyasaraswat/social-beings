@@ -16,18 +16,22 @@
 .emojiicon
 {
     color: gold;
+    transform:scale(1.1);
 }
 .locationicon
 {
     color: green;
+    transform:scale(1.1);
 }
 .labelicon
 {
     color: blue;
+    transform:scale(1.1);
 }
 .mediaicon
 {
     color: tomato;
+    transform:scale(1.1);
 }
 .shareimg
 {
