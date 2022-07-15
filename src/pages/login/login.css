@@ -109,11 +109,26 @@ body
 {
     .login-title 
     {
-        font-size: 30px;
+        font-size: 26px;
     }
     .login-desc {
-        margin-top: 1.3rem;
-        font-size: 15px;
+        font-size: 14px;
+        margin-top: 1.1rem;
+        text-align: center;
+    }
+    .login-bottom {
+        margin: 3rem auto;
+        width: 100%;
+    }
+    .login {
+       
+        width: 93%;
+    }
+    .login-box {
+        
+    
+        padding: 2rem 1rem;
+        width: 70%;
     }
 
 }

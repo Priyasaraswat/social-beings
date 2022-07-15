@@ -71,11 +71,10 @@ const handleMenu =()=>
         </div>
         </Link>
         
-        <div className='topbar-menu-icon '>
-        <span className="topbarLink" 
-        onClick={()=>{handleclick();
+        <div className='topbar-menu-icon '  onClick={()=>{handleclick();
                       handledelete();
-        }}><MdLogout /></span>
+        }}>
+        <span className="topbarLink" ><MdLogout /></span>
         <span className='topbarLink-text'>Log Out</span>
         </div>
        
