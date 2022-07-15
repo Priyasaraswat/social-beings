@@ -278,7 +278,7 @@ export const Memes =[
             },
             {
             "ID": 57,
-            "bottomText": "Panner😁",
+            "bottomText": "Colgate ad 😁",
             "image": "https://imgflip.com/s/meme/Unhelpful-High-School-Teacher.jpg",
             "name": "Unhelpful High School Teacher",
             "rank": 277,

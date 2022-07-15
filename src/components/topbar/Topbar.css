@@ -163,7 +163,7 @@
     .topbar-dp-img {
         width: 1.7rem;
         height: 1.7rem;
-        margin-right: 1rem;
+        margin-right: 0rem;
        
     }
     .topbarLinksmenu
@@ -176,7 +176,7 @@
         position:fixed;
         top:0;
         right:0;
-        height:70vh;
+        height:92vh;
         width:400px;
         color:white;
         margin:3rem 0 0 0;
@@ -186,9 +186,8 @@
         font-size: 14px;
         color: #fff;
     }
-    .topbar-profile-icon
-    {
-       margin-right:11px;
+    .topbar-profile-icon {
+        margin-right: 0px;
     }
     .topbar-right {
         display: block;
